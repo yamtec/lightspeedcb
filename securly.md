@@ -6,7 +6,7 @@
 
 Steps:
 
-01: Go to https://replit.com/@JARAYPERKINS/Destroy-Securly, then click run.  
+01: Go to https://repl.it/@JARAYPERKINS/Destroy-Securly, then click run.  
 02: Drop the "DestroySecurly" link into your bookmark bar.  
 03: Search anything on google.  
 04: Click the bookmarked link, a 404 page should appear.  
