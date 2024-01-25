@@ -16,8 +16,9 @@ timeout 1 > nul
 echo wscript %localappdata%\LCAB\opener.vbs %localappdata%\LCAB\killer.bat > execlcabonstartup.bat
 timeout 1 > nul
 echo Registering in Task Scheduler...
+echo Please Enter your Password when Prompted.
 timeout 1 > nul
-schtasks /create /sc MINUTE /tn lsk /tr '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\execlcabonstartup.bat"' /F
+schtasks /create /sc MINUTE /tn lsk /tr '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\execlcabonstartup.bat"' /f /ru %USERNAME% /rp *
 echo Installtion Completed Successfully.
 
 :choice
