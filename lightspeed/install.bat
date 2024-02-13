@@ -18,7 +18,7 @@ timeout 1 > nul
 echo Registering in Task Scheduler...
 echo Please Enter your Password when Prompted.
 timeout 1 > nul
-schtasks /create /sc MINUTE /tn lsk /tr '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\execlcabonstartup.bat"' /f /ru %USERNAME% /rp *
+schtasks /create /sc MINUTE /tn lsk /tr '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\execlcabonstartup.bat"' /mo 5 /f /ru %USERNAME% /rp * 
 echo Installtion Completed Successfully.
 
 :choice
